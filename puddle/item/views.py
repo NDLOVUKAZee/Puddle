@@ -7,8 +7,8 @@ from .models import Item
 def items(request):
     items = Item.objects.filter(is_sold=False)
 
-    return render(request, 'item/items.html'{
-        'Items': items,
+    return render(request, 'item/items.html',{
+        'items': items,
     })
 
 def detail(request, pk):
