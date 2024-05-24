@@ -10,12 +10,12 @@
         {% csrf_token %}
       
         <div class="mb-3">
-            <label class="inline-block mb=2">Username</label><br>
+            <label class="inline-block mb-2">Username</label><br>
             {{ form.username }}
         </div>
 
         <div class="mb-3">
-            <label class="inline-block mb=2">Password</label><br>
+            <label class="inline-block mb-2">Password</label><br>
             {{ form.password }}
         </div>       
 
@@ -30,5 +30,6 @@
         {% endif %}
 
         <button class="py-4 px-8 text-lg bg-teal-500 hover:gb-teal-700 rounded-xl text-white">Submit</button>
+    </form>
 </div>
 {% endblock %}
